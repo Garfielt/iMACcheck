@@ -22,10 +22,16 @@ A tool for get TV MAC address,can use to test network for electronic product
 
 现批量使用版本已可达到最快最高效的检测网口物理、协议层。（默认认为在网口上收发收据均正常视为网口物理及协议层均正常）
 
+最终DHCP监听版暂不提供，如有需要请联系索取，联系方式下附！
+
 内容介绍：
 iMac.py 自实现的DNSserver方式监听方式MAC获取；
 iMac_Testtool.py DNSserver + ARP监听方式MAC获取；
 Macserver asp写的MAC记录校验、MAC分类批次管理的服务器端。
+
+联系我：
+http://blog.iscsky.net
+http://weibo.com/liuwt123
 
 Copyright (c) 2012, Garfielt <liuwt123@gmail.com>.
 License: MIT (see LICENSE.txt for details)
