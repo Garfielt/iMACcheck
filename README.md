@@ -3,44 +3,44 @@ iMACcheck
 
 A tool for get TV MAC address,can use to test network for electronic product
 
-һ�����ڵ��ӻ��������߼���¼MAC address�Ĺ��ߣ������������Ӳ�Ʒ�����硣
+一个用于电视机生产在线检测记录MAC address的工具，可用来检测电子产品的网络。
 
-![Ч��ͼ](http://github.com/Garfielt/iMACcheck/raw/master/iMACcheck.jpg)
+![效果图](https://raw.githubusercontent.com/Garfielt/iMACcheck/master/iMACcheck.jpg)
 
-��Ҫ���ܣ�
-1���������磬��ȡ���Ϲ̶���ʶ��MAC��ַ��
-2����¼MAC������ظ������Ӻ�˻�����ȡMAC������Ϣ��
-3����ͨ��telnet��ɲ������������ù�����
+主要功能：
+1、监听网络，获取符合固定标识的MAC地址；
+2、记录MAC，甄别重复，链接后端机器获取MAC批次信息；
+3、可通过telnet完成部分批处理设置工作。
 
-�ù��߾����˼��θĽ���MAC��ַ��ȡ���ƾ����ˣ�
-1��HTTP���󴥷���
-2��ARP����ɨ�裻
-3����ʵ��DNS������ʵ�֣�
-4����ʵ��DHCP������ʵ�֡�
+该工具经历了几次改进，MAC地址获取机制经历了：
+1、HTTP请求触发；
+2、ARP监听扫描；
+3、自实现DNS服务器实现；
+4、自实现DHCP服务器实现。
 
-�ɵ���ʹ��Ҳ������ͬһ�����ݼ�¼Դһ��ʹ�á�
+可单机使用也可连接同一个数据记录源一起使用。
 
-������ʹ�ð汾�ѿɴﵽ������Ч�ļ������������Э��㡣��Ĭ����Ϊ���������շ��վݾ�������Ϊ����������Э����������
+现批量使用版本已可达到最快最高效的检测网口物理、协议层。（默认认为在网口上收发收据均正常视为网口物理及协议层均正常）
 
 
-���ݽ��ܣ�
-iMac.py ��ʵ�ֵ�DNSserver��ʽ������ʽMAC��ȡ��
-iMac_Testtool.py DNSserver + ARP������ʽMAC��ȡ��
-Macserver aspд��MAC��¼У�顢MAC�������ι����ķ������ˡ�
+内容介绍：
+iMac.py 自实现的DNSserver方式监听方式MAC获取；
+iMac_Testtool.py DNSserver + ARP监听方式MAC获取；
+Macserver asp写的MAC记录校验、MAC分类批次管理的服务器端。
 
-��װʹ�ã�
+安装使用：
 Python + wxpython
-Python���ֿ�ʹ��pyinstaller��py2exe�ȴ����exeʹ�ã�
-asp����ͨ��IIS����ɫ��aspwebserver������ʹ�ã�
-��ַ�����������Դ�������޸ġ�
+Python部分可使用pyinstaller、py2exe等打包成exe使用；
+asp部分通过IIS、绿色的aspwebserver等容器使用，
+地址等配置请根据源码自行修改。
 
-����DHCP�������ݲ��ṩ��������Ҫ����ϵ��ȡ����ϵ��ʽ�¸���
+最终DHCP监听版暂不提供，如有需要请联系索取，联系方式下附！
 
-��ϵ�ң�
+联系我：
 http://blog.iscsky.net
 http://weibo.com/liuwt123
 
 Copyright (c) 2012, Garfielt <liuwt123@gmail.com>.
 License: MIT (see LICENSE.txt for details)
 
-΢������������μ���ѭ΢��Ҫ��
+微软部分内容请参加遵循微软要求。
